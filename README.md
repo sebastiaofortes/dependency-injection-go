@@ -1,4 +1,4 @@
-Repositório de Exemplos de Injeção de Dependência em Go com Uber FX
+# Repositório de exemplos de Injeção de Dependência em Go com Uber FX
 Descrição:
 
 Este repositório contém exemplos de como usar a injeção de dependência em Go de forma tradicional e também com o framework Uber FX. 
@@ -16,4 +16,5 @@ O Uber FX é um framework de injeção de dependência para Go que é leve, ráp
 Para mais informações:
 
 Documentação do Uber FX: [https://uber-go.github.io/fx/]
+<br>
 Tutoriais do Uber FX: [https://pkg.go.dev/go.uber.org/fx]
