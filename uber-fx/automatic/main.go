@@ -8,8 +8,8 @@ import (
 // Service - Definindo a estrutura do serviço
 type Service struct{}
 
-// DoSomething - Ação do serviço
-func (s *Service) DoSomething() {
+// Execute - Ação do serviço
+func (s *Service) Execute() {
 	fmt.Println("Service: Fazendo algo importante!")
 }
 
@@ -31,7 +31,7 @@ func NewController(s *Service) *Controller {
 // ExecuteAction - Ação controlador chamando serviço
 func (c *Controller) ExecuteAction() {
 	fmt.Println("Controller: Preparando para executar uma ação")
-	c.service.DoSomething()
+	c.service.Execute()
 }
 
 // StartApp - Função envolvida por fx.Invoke para iniciar a aplicação
