@@ -6,8 +6,8 @@ import "fmt"
 type Service struct {
 }
 
-// DoSomething - Método exemplo de Service
-func (s *Service) DoSomething() {
+// Execute - Método exemplo de Service
+func (s *Service) Execute() {
 	fmt.Println("Service: Fazendo algo importante!")
 }
 
@@ -29,7 +29,7 @@ func NewController(s *Service) *Controller {
 // ExecuteAction - Método exemplo de Controller
 func (c *Controller) ExecuteAction() {
 	fmt.Println("Controller: Preparando para executar uma ação")
-	c.service.DoSomething()
+	c.service.Execute()
 }
 
 // StartApp - Função que inicializa a aplicação

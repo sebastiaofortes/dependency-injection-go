@@ -2,10 +2,6 @@ package dependencyinjecttion
 
 import "fmt"
 
-type Database interface {
-    Connect()
-}
-
 type PostgreSQL struct{}
 
 func (db PostgreSQL) Connect() {
@@ -13,10 +9,10 @@ func (db PostgreSQL) Connect() {
 }
 
 type Service struct {
-    db Database
+    db PostgreSQL
 }
 
-func (s *Service) SetDatabase(db Database) {
+func (s *Service) SetDatabase(db PostgreSQL) {
     s.db = db
 }
 

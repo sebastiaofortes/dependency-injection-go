@@ -2,12 +2,10 @@ package dependency
 
 import "go.uber.org/zap"
 
-var logger zap.Logger
+func ErrorLog(){
+	// intance logger
+	var logger = *zap.NewExample()
 
-func init(){
-	logger = *zap.NewExample()
-}
-
-func Log(){
-	//use logger
+	// use logger
+	logger.Error("example error", zap.Int("example", 1))
 }
